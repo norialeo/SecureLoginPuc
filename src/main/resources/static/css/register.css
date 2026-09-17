@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1E3A8A 0%, #38BDF8 100%);
+}
+
+.register-container {
+    display: flex;
+    width: 60vw;
+    min-width: 700px;
+    max-width: 960px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FCFEFF;
+}
+
+.register-image-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    padding: 0;
+    background: linear-gradient(160deg, #1E3A8A, #38BDF8);
+    overflow: hidden;
+}
+
+.register-image-logo-container spline-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 2rem;
+    border-radius: 0 10px 10px 0;
+}
+
+.register-title {
+    color: #1E3A8A;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.register-button-container {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.register-button-container button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;          /* botão quadrado */
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.register-button-container button:hover {
+    background-color: #1E3A8A;
+}
+
+.register-redirect-options {
+    text-align: center;
+    color: gray;
+    padding-top: 1rem;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.register-redirect-options a {
+    color: #2563EB;
+    font-weight: bold;
+}
+
+.register-redirect-options a:first-child {
+    margin-left: 5px;
+}
+
+.register-redirect-options a:last-child {
+    color: #0EA5E9;
+    margin-left: 5px;
+}
+
+@media (max-width: 760px) {
+    .register-container {
+        flex-direction: column;
+        width: 92vw;
+        min-width: 0;
+    }
+
+    .register-image-logo-container,
+    .register-form {
+        width: 100%;
+    }
+
+    .register-image-logo-container {
+        height: 180px;
+    }
+}
